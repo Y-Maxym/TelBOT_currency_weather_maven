@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: TelBOT_currency_weather
+  config:
+    import: optional:file:.env[.properties]
+
+bot:
+  username: ${bot.username}
+  token: ${bot.token}
+
+exchange:
+  url: ${exchange.url}
+
+weather:
+  url: ${weather.url}
+  key: ${weather.key}
